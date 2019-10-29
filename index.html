@@ -9,9 +9,15 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/darkly/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-w+8Gqjk9Cuo6XH9HKHG5t5I1VR4YBNdPt/29vwgfZR485eoEJZ8rJRbm3TR32P6k" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- ScrollTo Navbar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body>
     <main>
 
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
@@ -25,16 +31,17 @@
                 <div class="collapse navbar-collapse" id="ResponsiveNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#section1">Qui Suis-je ? <span class="sr-only"></span></a>
+                            <a class="nav-link js-scrollTo" href="#section1">Qui Suis-je ?<span
+                                    class="sr-only"></span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section2">Mes Expériences Pro</a>
+                            <a class="nav-link js-scrollTo" href="#section2">Mes Expériences Pro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section3">Mes Projets</a>
+                            <a class="nav-link js-scrollTo" href="#section3">Mes Projets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section4">Contactez-moi</a>
+                            <a class="nav-link js-scrollTo" href="#section4">Contactez-moi</a>
                         </li>
                     </ul>
                 </div>
@@ -43,10 +50,9 @@
 
         <div class="container">
 
-            <div style="margin-top: 90px;"></div>
 
             <!--Présentation-->
-            <section class="" id="section1">
+            <section class="" id="section1" style="margin-top:90px;">
                 <h1>Qui Suis-Je ?</h1>
                 <div class="row">
                     <div class="col-md-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illo
@@ -293,9 +299,6 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
